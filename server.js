@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // mongoose connection
-mongoose.connect(`mongodb+srv://kkUser:sanchez834432@kubus.skllo.mongodb.net/kubkoDB`, {
+mongoose.connect(`mongodb+srv://kkUser:${process.env.MONGO_KEY}@kubus.skllo.mongodb.net/kubkoDB`, {
 	useUnifiedTopology: true,
 	useNewUrlParser: true
 });
