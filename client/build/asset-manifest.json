@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c7f46db.chunk.css",
+    "main.js": "/static/js/main.9835bcc5.chunk.js",
+    "main.js.map": "/static/js/main.9835bcc5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9ca6690e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9ca6690e.js.map",
+    "static/js/2.a548dfb2.chunk.js": "/static/js/2.a548dfb2.chunk.js",
+    "static/js/2.a548dfb2.chunk.js.map": "/static/js/2.a548dfb2.chunk.js.map",
+    "static/js/3.671c081d.chunk.js": "/static/js/3.671c081d.chunk.js",
+    "static/js/3.671c081d.chunk.js.map": "/static/js/3.671c081d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6c7f46db.chunk.css.map": "/static/css/main.6c7f46db.chunk.css.map",
+    "static/js/2.a548dfb2.chunk.js.LICENSE.txt": "/static/js/2.a548dfb2.chunk.js.LICENSE.txt",
+    "static/media/kubko (1).b3d3cf27.jpg": "/static/media/kubko (1).b3d3cf27.jpg",
+    "static/media/kubko (2).cd571bbe.jpg": "/static/media/kubko (2).cd571bbe.jpg",
+    "static/media/App.css": "/static/media/kubko (3).8766b014.jpg",
+    "static/media/kubko (4).6718a32c.jpg": "/static/media/kubko (4).6718a32c.jpg",
+    "static/media/kubko (5).6bd999ac.jpg": "/static/media/kubko (5).6bd999ac.jpg",
+    "static/media/kubko (6).f9d4a73d.jpg": "/static/media/kubko (6).f9d4a73d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ca6690e.js",
+    "static/js/2.a548dfb2.chunk.js",
+    "static/css/main.6c7f46db.chunk.css",
+    "static/js/main.9835bcc5.chunk.js"
+  ]
+}
