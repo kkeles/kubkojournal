@@ -4,6 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
+const Walk = require('./models/walkModel');
+const Food = require('./models/foodModel');
 const port = process.env.PORT || 5000;
 
 // middleware
