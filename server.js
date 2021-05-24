@@ -22,6 +22,9 @@ mongoose.connect(
 	}
 );
 
+// app.use('/', require('./routes/foodRoute'));
+app.use('/', require('./routes/walkRoute'));
+
 // acquire react file, if the environment is in production mode
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
