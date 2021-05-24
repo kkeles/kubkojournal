@@ -1,5 +1,9 @@
 const express = require('express');
-const Walk = require('../models/walkModel');
+// const Walk = require('../models/walkModel');
+
+app.get('/walks', function(req, res) {
+	Walk.find().then((walks) => res.json(walks));
+});
 
 app.post('/newWalk', function(req, res) {
 	const walkDate = new Date();

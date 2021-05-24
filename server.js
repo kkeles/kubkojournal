@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
-const Walk = require('./models/walkModel');
-const Food = require('./models/foodModel');
+// const Walk = require('./models/walkModel');
+// const Food = require('./models/foodModel');
 const port = process.env.PORT || 5000;
 
 // middleware
@@ -21,16 +21,6 @@ mongoose.connect(
 		useNewUrlParser: true
 	}
 );
-
-// API Routes
-
-app.get('/foods', function(req, res) {
-	Food.find().then((foods) => res.json(foods));
-});
-
-app.get('/walks', function(req, res) {
-	Walk.find().then((walks) => res.json(walks));
-});
 
 // acquire react file, if the environment is in production mode
 if (process.env.NODE_ENV === 'production') {
