@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.route('/walk').get((req, res) => {
+router.route('/walks').get((req, res) => {
 	Walk.find().then((walks) => res.json(walks));
 });
 
@@ -9,7 +9,7 @@ router.route('/walk').get((req, res) => {
 // 	Walk.find().then((walks) => res.json(walks));
 // });
 
-router.route('/walk').post((req, res) => {
+router.route('/newWalk').post((req, res) => {
 	const walkDate = new Date();
 	const walkDuration = parseInt(req.body.walkDuration);
 	const pooped = req.body.pooped;

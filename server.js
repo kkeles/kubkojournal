@@ -22,7 +22,7 @@ mongoose.connect(
 	}
 );
 
-// app.use('/', require('./routes/foodRoute'));
+app.use('/', require('./routes/foodRoute'));
 app.use('/', require('./routes/walkRoute'));
 
 // acquire react file, if the environment is in production mode
