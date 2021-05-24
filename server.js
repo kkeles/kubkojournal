@@ -20,26 +20,6 @@ mongoose.connect(
 	}
 );
 
-// walkSchema
-const walkSchema = {
-	walkDate: Number,
-	walkDuration: Number,
-	pooped: Boolean,
-	peed: Boolean
-};
-
-const Walk = mongoose.model('Walk', walkSchema);
-
-// foodSchema
-const foodSchema = {
-	foodTime: Number,
-	foodGr: { type: Number, require: true },
-	treated: Boolean,
-	treatQuantity: Number
-};
-
-const Food = mongoose.model('Food', foodSchema);
-
 // API Routes
 
 app.get('/foods', function(req, res) {
@@ -48,27 +28,6 @@ app.get('/foods', function(req, res) {
 
 app.get('/walks', function(req, res) {
 	Walk.find().then((walks) => res.json(walks));
-});
-
-// Add New Food
-app.post('/newFood', function(req, res) {
-	const foodTime = new Date();
-	const foodGr = req.body.foodGr;
-	const treated = req.body.treated;
-	const treatQuantity = req.body.treatQuantity;
-	const newFoodEntry = new Food({ foodTime, foodGr, treated, treatQuantity });
-
-	newFoodEntry.save();
-});
-
-// Add New Walk
-app.post('/newWalk', function(req, res) {
-	const walkDate = new Date();
-	const walkDuration = parseInt(req.body.walkDuration);
-	const pooped = req.body.pooped;
-	const peed = req.body.peed;
-	const newWalkEntry = new Walk({ walkDate, walkDuration, pooped, peed });
-	newWalkEntry.save();
 });
 
 // acquire react file, if the environment is in production mode
