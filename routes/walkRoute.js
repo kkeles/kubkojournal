@@ -1,4 +1,5 @@
 const express = require('express');
+const Walk = require('../models/walkModel');
 const router = express.Router();
 
 router.route('/walks').get((req, res) => {
